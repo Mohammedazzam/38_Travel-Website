@@ -7,19 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- Start Header -->
     <div class="header">
-        <nav>
+        <nav id="navBar">
             <img src="./images/logo.png" class="logo" alt="logo">
             <ul class="nav-links">
-                <li><a href="#">Popular Places</a></li>
+                <li><a href="#" class="active">Popular Places</a></li>
                 <li><a href="#">Travel Outside</a></li>
                 <li><a href="#">Online Packages</a></li>
             </ul>
             <a href="#" class="register-btn">Register Now</a>
+            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
         </nav>
         <div class="container">
             <h1>Fined Your Next Stay</h1>
@@ -166,8 +170,33 @@
             </div>
         </div>
         <a href="#" class="start-btn">Start Making Mony</a>
+
+        <div class="about-msg">
+            <h2>About Staybnb</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Excepturi tempore quod cumque inventore veritatis aspernatur,
+                saepe repellendus, quidem quos numquam nam aperiam dolor ipsa laborum necessitatibus, harum
+                exercitationem assumenda sit pariatur non qui sint labore! Illo, consequuntur veniam. Facilis
+                consequuntur molestiae at maiores expedita itaque beatae iusto veritatis, quos exercitationem.
+            </p>
+        </div>
+        <div class="footer">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <hr>
+            <p>Copyright © 2022, MohAzzam</p>
+        </div>
     </div>
     <!-- End Section Exclusives -->
+    <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu")
+        }
+    </script>
 </body>
 
 </html>
